@@ -25,4 +25,17 @@ public:
 		return;
 	}
 
+	//cek apakah antrian kosong 
+	if (front == -1) {
+		front = 0;
+		rear = 0;
+	}
+	else {
+		//jika rear berada di posisi terakhir array, kembali ke awal array
+		if (rear == max - 1)
+			rear = 0;
+		else
+			rear = rear + 1;
+	}
+	queuq_array[rear] = num;
 };
