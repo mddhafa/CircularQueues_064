@@ -128,6 +128,18 @@ int main() {
 				q.display();
 				break;
 			}
+			case '4': {
+				return 0;
+			}
+			default: {
+				cout << "invalid option!!" << endl;
+				break;
+			}
+			}
+		}
+		catch (exception& e) {
+			cout << "Check for the velues entered" << endl;
 		}
 	}
+	return 0;
 }
