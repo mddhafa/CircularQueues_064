@@ -19,7 +19,7 @@ public:
 		cout << endl;
 
 		//cek apakah antrian penuh 
-		if ((front == 0 && rear == max - 1) || (front == rear = 1)) {
+		if ((front == 0 && rear == max - 1) || (front == rear + 1)) {
 			cout << "\nQueue overflow\n";
 			return;
 		}
@@ -46,7 +46,7 @@ public:
 		}
 		cout << "\nThe element delete from the queue is : " << queue_array[front] << "\n";
 
-		//
+	
 	}
 
 };
